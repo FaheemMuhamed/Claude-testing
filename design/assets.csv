@@ -1,0 +1,12 @@
+id,role,type,description,size/ratio,style line ref,source
+hero,player sprite (idle frame + run sheet key),sprite,the hooded ember knight,1:1 -> 128px,STYLE_FORMULA,generate (key #FF00FF)
+hero_run,player run loop spritesheet,animation,the hooded ember knight run cycle,1:1 720p video -> 12 frames,STYLE_FORMULA,generate seedance_2_5 from hero
+wisp,melee chaser enemy,sprite,the floating ash wraith,1:1 -> 96px,STYLE_FORMULA,generate (key #00FF00)
+slinger,ranged enemy,sprite,the hunched husk slinger,1:1 -> 104px,STYLE_FORMULA,generate (key #00FF00)
+brute,charging tank enemy,sprite,the hulking cinder golem,1:1 -> 150px,STYLE_FORMULA,generate (key #00FF00)
+warden,final boss,sprite,the hollow chained warden,1:1 -> 260px,STYLE_FORMULA,generate (key #00FF00)
+floor,room floor tiling,tile,cracked underworld flagstones,1:1 -> 256px,STYLE_FORMULA,generate
+title,title / game-over backdrop,background,a vast underworld cavern stairway rising toward distant light,16:9 -> 1280x720,STYLE_FORMULA,generate
+icon_flame,boon icon (Pyre blessing),ui,a blazing flame sigil,1:1 -> 96px,STYLE_FORMULA,generate (key #00FF00)
+icon_frost,boon icon (Tide blessing),ui,a frozen crystal wave sigil,1:1 -> 96px,STYLE_FORMULA,generate (key #FF00FF)
+icon_storm,boon icon (Gale blessing),ui,a crackling lightning sigil,1:1 -> 96px,STYLE_FORMULA,generate (key #FF00FF)
