@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Cinderdeep</title>
+<style>
+  :root { --bg:#07090d; --ink:#f3e6d0; --gold:#ffcf5a; --ember:#ff7a2f; --muted:#8a94a6; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; height:100%; background:var(--bg); color:var(--ink); overflow:hidden;
+    font-family: Georgia, "Times New Roman", serif; -webkit-user-select:none; user-select:none; touch-action:none; }
+  #wrap { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; }
+  canvas { display:block; image-rendering:auto; background:#000; box-shadow:0 0 80px #000; }
+  #touch { position:fixed; inset:0; pointer-events:none; display:none; }
+  #touch.on { display:block; }
+  .tbtn { position:absolute; pointer-events:auto; border-radius:50%; border:2px solid rgba(255,207,90,.5);
+    background:rgba(20,16,12,.45); color:var(--gold); font:bold 14px Georgia, serif; display:flex;
+    align-items:center; justify-content:center; }
+  #stick { position:absolute; left:24px; bottom:24px; width:150px; height:150px; border-radius:50%;
+    border:2px solid rgba(255,207,90,.35); background:rgba(20,16,12,.3); pointer-events:auto; }
+  #knob { position:absolute; left:50%; top:50%; width:60px; height:60px; margin:-30px; border-radius:50%;
+    background:rgba(255,122,47,.55); }
+</style>
+</head>
+<body>
+<div id="wrap"><canvas id="c" width="1280" height="720" aria-label="Cinderdeep game"></canvas></div>
+<div id="touch">
+  <div id="stick"><div id="knob"></div></div>
+  <div class="tbtn" id="tAtk" style="right:110px;bottom:40px;width:84px;height:84px">STRIKE</div>
+  <div class="tbtn" id="tDash" style="right:20px;bottom:120px;width:72px;height:72px">DASH</div>
+  <div class="tbtn" id="tCast" style="right:120px;bottom:140px;width:64px;height:64px">CAST</div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
